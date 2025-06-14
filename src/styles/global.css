@@ -1,9 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* {
-    color: rgb(226, 227, 227);
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-html {
+* {
+    color: #e5e7ebc0;
+}
+
+html,
+body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile__name {
+    margin-bottom: 0.3em;
+}
+.profile__name a {
+    color: #e5e7eb;
+    
+}
+
+.profile__title {
+    font-weight: 500;
+    margin-bottom: 1.3em;
+    color: #e5e7eb;
+
+}
+
+p {
+    font-weight: 300;
 }
