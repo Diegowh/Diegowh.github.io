@@ -1,14 +1,7 @@
----
-export interface Props {
-    name: string;
-    title: string;
-    description: string;
-}
-const { name, title, description } = Astro.props
----
 
-<article class="profile">
-    <h1 class="profile__name"><a href="/">{name}</a></h1>
-    <h2 class="profile__title">{title}</h2>
-    <p class="profile_description">{description}</p>
-</article>
+
+<div class="profile">
+    <h1 class="profile__name"><a href="/">"Diego García"</a></h1>
+    <h2 class="profile__title">Software Developer</h2>
+    <p class="profile_description">Creo soluciones tecnológicas de principio a fin</p>
+</div>

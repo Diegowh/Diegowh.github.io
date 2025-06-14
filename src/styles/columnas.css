@@ -1,6 +1,9 @@
 .container {
     display: flex;
     height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    
 }
 
 .left, .right {
@@ -14,12 +17,17 @@
   height: 100%;
   overflow: hidden;
   padding: 2rem;
-  background: #0f172a;
+  background: #610000;
 }
 
 .right {
   height: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
   padding: 2rem;
-  background: #0f172f;
+  background: #442800;
+}
+
+.right::-webkit-scrollbar {
+  display: none;
 }

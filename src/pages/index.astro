@@ -1,13 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Profile from "../components/Profile.astro";
+import About from "../components/About.astro"
 ---
 
 <MainLayout>
-    <Profile
-        slot="leftbar"
-        name="Diego García"
-        title="Desarrollador de Software"
-        description="Creo soluciones tecnológicas de principio a fin."
-    />
+    <Profile slot="leftbar"/>
+    <About/>
 </MainLayout>
