@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+
+export interface Props {
+    imageSrc: ImageMetadata;
+    title: string;
+    description: string;
+    technologies?: string[];
+}
+
+const { imageSrc, title, description, technologies = [] } = Astro.props;
+---
+
+<div class="card">
+    <div class="card__left_column">
+        <div class="image_container">
+            <Image class="project_image" src={imageSrc} alt={title} />
+        </div>
+    </div>
+    <div class="card__right_column">
+        <p class="title">{title}</p>
+        <p class="description">{description}</p>
+        <div class="tech_container">
+            {technologies.map((tech) => <span>{tech}</span>)}
+        </div>
+    </div>
+</div>

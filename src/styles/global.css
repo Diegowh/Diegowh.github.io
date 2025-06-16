@@ -40,7 +40,6 @@ h2 {
 
 a {
     text-decoration: none;
-    background-color: rgb(166, 166, 108);
 }
 
 p {
@@ -128,6 +127,7 @@ p {
     min-width: 25%;
     color: rgba(148, 163, 184, 0.637);
     font-weight: 500;
+    padding-top: 4.5px;
 
 }
 
@@ -158,4 +158,29 @@ p {
     font-size: .8em;
     font-weight: 600;
     line-height: 2.2em;
+}
+
+/* CV Link */
+
+.cv_link_container {
+    padding-top: 10px;
+    padding-bottom: 120px;
+}
+
+.cv_link_txt {
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.cv_link_txt:hover {
+    color: rgba(94, 234, 212);
+}
+
+
+/* Project cards */
+
+.project_image  {
+    width: 130px;
+    height: auto;
+    border-radius: 2px;
 }
