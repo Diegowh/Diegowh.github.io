@@ -78,10 +78,9 @@ p {
 }
 
 .left {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  left: 400px;
   height: 100%;
-  overflow: hidden;
   padding: 2rem;
   /* background: #610000; */
   flex: 0 0 550px;
@@ -89,11 +88,11 @@ p {
 
 .right {
   height: 100%;
-  overflow-y: scroll;
   scrollbar-width: none;
   padding: 2.5rem;
   /* background: #442800; */
-  flex: 0 0 700px;
+  flex: 0 0 650px;
+  margin-left: 540px;
 }
 
 .right::-webkit-scrollbar {
