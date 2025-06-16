@@ -69,30 +69,29 @@ p {
 .container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    height: 100vh;
+    gap: 10px;
     width: 80%;
-    margin: 3.9em auto;
-    
+    margin: auto;
+    position: relative;
+    /* background-color: aqua; */
     
 }
 
 .left {
-  position: fixed;
-  left: 400px;
-  height: 100%;
-  padding: 2rem;
+  position: sticky;
+  top: 0;
+  padding: 5.2em 1em;
   /* background: #610000; */
   flex: 0 0 550px;
+  align-self: flex-start;
 }
 
 .right {
   height: 100%;
   scrollbar-width: none;
-  padding: 2.5rem;
+  padding: 5.2em 2.5rem;
   /* background: #442800; */
   flex: 0 0 650px;
-  margin-left: 540px;
 }
 
 .right::-webkit-scrollbar {
