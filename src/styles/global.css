@@ -42,6 +42,7 @@ a {
     text-decoration: none;
     background-color: rgb(166, 166, 108);
 }
+
 p {
     line-height: 1.7em;
 }
@@ -67,6 +68,7 @@ p {
 
 .about {
     font-size: 1em;
+    margin-bottom: 170px;
 }
 
 .container {
@@ -96,4 +98,60 @@ p {
 
 .right::-webkit-scrollbar {
     display: none;
+}
+
+/* Tarjeta de Experiencia Laboral */
+.card {
+
+    margin-top: 0;
+    margin-bottom: 2em;
+    display: flex;
+    padding: 2em;
+    border-radius: 6px;
+    border-top: 1px solid transparent;
+}
+
+.card:hover {
+    background-color: #5b678213;
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.107);
+}
+
+.card:hover .title {
+    color: rgba(94, 234, 212);
+
+}
+
+.card__left_column {
+    font-size: .75em;
+    min-width: 25%;
+    color: rgba(148, 163, 184, 0.637);
+    font-weight: 500;
+
+}
+
+.card__right_column .title {
+    font-weight: bold;
+    color: whitesmoke;
+    margin-bottom: 0.5em;
+    /* margin-top: -5px; */
+
+}
+
+.card__right_column .description {
+    line-height: 1.3em;
+    margin-bottom: 1em;
+}
+
+.card__right_column .tech_container {}
+
+.card__right_column .tech_container span {
+    color: rgba(94, 234, 212);
+    background-color: rgba(18, 49, 59, 0.669);
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-size: .8em;
+    font-weight: 600;
+    margin: 1px;
+    line-height: 2.8em;
 }
