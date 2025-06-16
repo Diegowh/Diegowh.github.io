@@ -8,7 +8,24 @@ import Card from "../components/Card.astro";
 <MainLayout>
     <Profile slot="leftbar"/>
     <About/>
-    <Card/>
-    <Card/>
-    <Card/>
+    <Card 
+        period="2024 ━ PRESENT"
+        title="Senior Frontend Engineer, Accessibility"
+        description="Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility."
+        technologies={["JavaScript", "HTML", "TypeScript", "React", "Next.js", "React Native", "Wordpress", "Contentful", "Node.js", "PHP"]}
+    />
+    
+    <Card 
+        period="2022 ━ 2024"
+        title="Frontend Developer"
+        description="Developed responsive web applications using modern JavaScript frameworks. Collaborated with UX/UI designers to implement pixel-perfect designs and ensure optimal user experience across all devices."
+        technologies={["Vue.js", "JavaScript", "CSS3", "SASS", "Webpack", "Git"]}
+    />
+    
+    <Card 
+        period="2020 ━ 2022"
+        title="Junior Web Developer"
+        description="Created and maintained websites for various clients. Focused on learning best practices in web development and gaining experience with different technologies and frameworks."
+        technologies={["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap", "MySQL"]}
+    />
 </MainLayout>
