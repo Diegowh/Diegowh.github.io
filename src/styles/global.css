@@ -156,10 +156,10 @@ fill: rgba(94, 234, 212);
     min-width: 25%;
     font-weight: 500;
     padding-top: 4.5px;
-    margin-right: 4em;
+    margin-right: 3.5em;
 
 }
-.card__left_column .title {
+.card__left_column .period {
     color: rgb(100, 116, 139);
 
 }
