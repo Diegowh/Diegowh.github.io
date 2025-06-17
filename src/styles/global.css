@@ -18,6 +18,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #0f172a;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -179,7 +180,7 @@ p {
 
 /* Project cards */
 
-.project_image  {
+.project_image {
     width: 130px;
     height: auto;
     border-radius: 2px;
@@ -199,11 +200,13 @@ p {
     font-weight: bold;
     color: rgba(148, 163, 184, 0.438);
     font-size: smaller;
+    vertical-align: middle;
+    transition: color .3s ease;
 }
 
 .menu a:hover .menu__name,
-.menu a:focus-visible .menu__name {
-  color: whitesmoke;
+.menu a.active .menu__name {
+    color: whitesmoke;
 }
 
 .menu__bar {
@@ -218,11 +221,15 @@ p {
 }
 
 .menu a:hover .menu__bar,
-.menu a:focus-visible .menu__bar {
+.menu a.active .menu__bar {
     width: 70px;
     background-color: whitesmoke;
 }
 
 .menu a:focus-visible .menu__bar {
     transition: none;
+}
+
+#sobre-mi {
+    scroll-margin-top: 100px;
 }

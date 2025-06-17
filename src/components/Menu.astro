@@ -1,28 +1,54 @@
 <div class="menu">
     <ul>
         <li>
-            <a href="">
+            <a href="#sobre-mi">
                 <span class="menu__bar"></span>
                 <span class="menu__name">SOBRE MI</span>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="#experiencia">
                 <span class="menu__bar"></span>
                 <span class="menu__name">EXPERIENCIA</span>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="#proyectos">
                 <span class="menu__bar"></span>
                 <span class="menu__name">PROYECTOS</span>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="#estudios">
                 <span class="menu__bar"></span>
                 <span class="menu__name">ESTUDIOS</span>
             </a>
         </li>
     </ul>
 </div>
+
+<script>
+    const sections = document.querySelectorAll<HTMLElement>("main [id]");
+    const links = document.querySelectorAll(".menu a");
+
+    function setActive() {
+        let currentId = "";
+        const scrollPos = window.scrollY + 100;
+
+        sections.forEach((sec) => {
+            if (sec.offsetTop <= scrollPos) {
+                currentId = sec.id;
+            }
+        });
+
+        links.forEach((a) => {
+            a.classList.toggle(
+                "active",
+                a.getAttribute("href") === `#${currentId}`,
+            );
+        });
+    }
+
+    window.addEventListener("scroll", setActive);
+    window.addEventListener("load", setActive);
+</script>
