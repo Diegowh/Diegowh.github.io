@@ -7,68 +7,58 @@ import SectionLink from "../components/SectionLink.astro";
 import ProjectCard from "../components/card/ProjectCard.astro";
 import Menu from "../components/Menu.astro";
 import EducationCard from "../components/card/EducationCard.astro";
-import SocialMedia from "../components/SocialMedia.astro"
+import SocialMedia from "../components/SocialMedia.astro";
+import ProjectsLink from "../components/ProjectsLink.astro"
 
 import imagenEjemplo from "../assets/course-card.webp";
+
 ---
 
 <MainLayout>
     <Profile slot="leftbar" />
     <Menu slot="leftbar" />
-    <SocialMedia slot="leftbar"/>
+    <SocialMedia slot="leftbar" />
     <div id="sobre-mi">
         <About />
     </div>
 
     <div id="experiencia">
         <ExperienceCard
-            period="2024 ━ ACTUALIDAD"
-            title="Senior Frontend Engineer, Accessibility"
-            description="Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility."
+            period="2025 ━ ACTUALIDAD"
+            title="Desarrollador de Software · Homolocar"
+            description="He desarrollado y mantenido una herramienta de automatización de procesos internos de la empresa. Gracias a esto he conseguido reducir la carga de trabajo de la plantilla significativamente."
             technologies={[
-                "JavaScript",
-                "HTML",
-                "TypeScript",
-                "React",
-                "Next.js",
-                "React Native",
-                "Wordpress",
-                "Contentful",
-                "Node.js",
-                "PHP",
+                "Python",
+                "PostgreSQL",
+                "CI/CD",
+                "Ruff",
+                "uv",
+                "Git y GitHub",
             ]}
         />
 
         <ExperienceCard
-            period="2022 ━ 2024"
-            title="Frontend Developer"
-            description="Developed responsive web applications using modern JavaScript frameworks. Collaborated with UX/UI designers to implement pixel-perfect designs and ensure optimal user experience across all devices."
-            technologies={[
-                "Vue.js",
-                "JavaScript",
-                "CSS3",
-                "SASS",
-                "Webpack",
-                "Git",
-            ]}
+            period="2024 ━ 2025"
+            title="Desarrollador Web · Freelance"
+            description="Diseñé y desarrollé un sitio web para un cliente del sector del comercio textil. Implementé el sistema de pagos integrado con Stripe y configuré el alojamiento con Hostinger."
+            technologies={["Wordpress", "CSS", "Hostinger", "CMS"]}
         />
 
         <ExperienceCard
-            period="2020 ━ 2022"
-            title="Junior Web Developer"
-            description="Created and maintained websites for various clients. Focused on learning best practices in web development and gaining experience with different technologies and frameworks."
+            period="Enero 2024 ━ Julio 2024"
+            title="Desarrollador de Software"
+            description="Trabajé en un equipo para desarrollar una solución de procesamiento de imágenes mediante un OCR. Diseñé un paquete en Python utilizando TesseractOCR y OpenCV para la extracción de datos a formato JSON."
             technologies={[
-                "HTML5",
-                "CSS3",
-                "JavaScript",
-                "jQuery",
-                "Bootstrap",
-                "MySQL",
+                "Python",
+                "OpenCV",
+                "TesseractOCR",
+                "Git y Github",
+                "Trello",
             ]}
         />
     </div>
 
-    <SectionLink hrefLink="#" text="Ver CV completo" />
+    <SectionLink hrefLink="#" text="Ver CV completo"/>
 
     <div id="proyectos">
         <ProjectCard
@@ -153,15 +143,16 @@ import imagenEjemplo from "../assets/course-card.webp";
         />
     </div>
 
-    <SectionLink hrefLink="#" text="Ver todos mis proyectos" />
+    <ProjectsLink hrefLink="#" text="Ver todos mis proyectos" />
 
     <div id="estudios">
-        <EducationCard
-            period="2024 ━ 2026"
-            title="Grado Superior en Desarrollo de Aplicaciones Multiplataforma"
-            description="Santa María la Nueva y San José Artesano"
-        />
-
+        <a href="https://santamaria-artesano.org/" target="_blank">
+            <EducationCard
+                period="2024 ━ 2026"
+                title="Grado Superior en Desarrollo de Aplicaciones Multiplataforma"
+                description="Santa María la Nueva y San José Artesano"
+            />
+        </a>
         <EducationCard
             period="2022-2023"
             title="Fundamentos de la gestión de proyectos"

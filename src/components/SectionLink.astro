@@ -1,5 +1,5 @@
 ---
-import ArrowIcon from "./arrow-up-right-from-square.svg";
+import DiagonalArrowIcon from "./reshot-icon-arrow-diagonal-up-right.svg";
 
 export interface Props {
     hrefLink: string,
@@ -12,6 +12,6 @@ const { hrefLink, text } = Astro.props
 <div class="section_link_container">
     <a href={hrefLink}>
         <span class="section_link_txt">{text}</span>
-        <ArrowIcon class="icon"/>
+        <DiagonalArrowIcon class="icon"/>
     </a>
 </div>

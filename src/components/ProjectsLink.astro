@@ -1,0 +1,17 @@
+---
+import RightArrowIcon from "./reshot-icon-arrow-right.svg"
+
+export interface Props {
+    hrefLink: string,
+    text: string
+}
+
+const { hrefLink, text } = Astro.props
+---
+
+<div class="projects_link_container">
+    <a href={hrefLink}>
+        <span class="projects_link_txt">{text}</span>
+        <RightArrowIcon class="icon"/>
+    </a>
+</div>

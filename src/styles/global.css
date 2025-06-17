@@ -220,6 +220,44 @@ fill: rgba(94, 234, 212);
     transition: transform .2s ease, fill .2s ease;
 }
 
+.section_link_container .icon {
+    width: 1em;
+    height: auto;
+    fill: whitesmoke;
+    margin-left: .5em;
+}
+
+
+.projects_link_container .icon {
+    width: 1em;
+    height: auto;
+    fill: whitesmoke;
+    margin-left: .5em;
+}
+.projects_link_container {
+    padding-top: 10px;
+    padding-bottom: 120px;
+}
+
+.projects_link_txt {
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.projects_link_container a:hover .projects_link_txt,
+.projects_link_container a:hover .icon {
+  color: rgba(94, 234, 212);
+  fill:  rgba(94, 234, 212);
+}
+
+.projects_link_container a:hover .icon {
+    transform: translate(8px, 2px);
+}
+
+.projects_link_container .icon {
+    transform: translate(0px, 2px);
+    transition: transform .2s ease, fill .2s ease;
+}
 
 /* Project cards */
 .project_image {
@@ -281,10 +319,5 @@ fill: rgba(94, 234, 212);
     margin-bottom: 0.3em;
 }
 
-.section_link_container .icon {
-    width: 1em;
-    height: auto;
-    fill: whitesmoke;
-    margin-left: .5em;
-}
+
 
