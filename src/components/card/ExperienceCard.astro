@@ -1,0 +1,16 @@
+---
+import BaseCard from "./BaseCard.astro";
+
+export interface Props {
+    period: string;
+    title: string;
+    description: string;
+    technologies?: string[];
+}
+
+const { period, ...rest } = Astro.props;
+---
+
+<BaseCard {...rest}>
+    <div slot="left">{period}</div>
+</BaseCard>

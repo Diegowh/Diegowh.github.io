@@ -2,10 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Profile from "../components/Profile.astro";
 import About from "../components/About.astro";
-import Card from "../components/Card.astro";
-import CvLink from "../components/CvLink.astro";
-import ProjectCard from "../components/ProjectCard.astro";
+import ExperienceCard from "../components/card/ExperienceCard.astro";
+import SectionLink from "../components/SectionLink.astro";
+import ProjectCard from "../components/card/ProjectCard.astro";
 import Menu from "../components/Menu.astro";
+import EducationCard from "../components/card/EducationCard.astro";
 
 import imagenEjemplo from "../assets/course-card.webp";
 ---
@@ -18,8 +19,8 @@ import imagenEjemplo from "../assets/course-card.webp";
     </div>
 
     <div id="experiencia">
-        <Card
-            period="2024 ━ PRESENT"
+        <ExperienceCard
+            period="2024 ━ ACTUALIDAD"
             title="Senior Frontend Engineer, Accessibility"
             description="Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility."
             technologies={[
@@ -36,7 +37,7 @@ import imagenEjemplo from "../assets/course-card.webp";
             ]}
         />
 
-        <Card
+        <ExperienceCard
             period="2022 ━ 2024"
             title="Frontend Developer"
             description="Developed responsive web applications using modern JavaScript frameworks. Collaborated with UX/UI designers to implement pixel-perfect designs and ensure optimal user experience across all devices."
@@ -50,7 +51,7 @@ import imagenEjemplo from "../assets/course-card.webp";
             ]}
         />
 
-        <Card
+        <ExperienceCard
             period="2020 ━ 2022"
             title="Junior Web Developer"
             description="Created and maintained websites for various clients. Focused on learning best practices in web development and gaining experience with different technologies and frameworks."
@@ -65,7 +66,7 @@ import imagenEjemplo from "../assets/course-card.webp";
         />
     </div>
 
-    <CvLink />
+    <SectionLink hrefLink="#" text="Ver CV completo" />
 
     <div id="proyectos">
         <ProjectCard
@@ -88,7 +89,106 @@ import imagenEjemplo from "../assets/course-card.webp";
                 "GitHub",
             ]}
         />
+        <ProjectCard
+            imageSrc={imagenEjemplo}
+            title="Mi proyecto"
+            description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
+            technologies={["Astro", "TypeScript", "CSS"]}
+        />
+        <ProjectCard
+            imageSrc={imagenEjemplo}
+            title="Proyecto 22"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            technologies={[
+                "Python",
+                "Django",
+                "FastAPI",
+                "HTML",
+                "Docker",
+                "Git",
+                "GitHub",
+            ]}
+        />
+        <ProjectCard
+            imageSrc={imagenEjemplo}
+            title="Mi proyecto"
+            description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
+            technologies={["Astro", "TypeScript", "CSS"]}
+        />
+        <ProjectCard
+            imageSrc={imagenEjemplo}
+            title="Proyecto 22"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            technologies={[
+                "Python",
+                "Django",
+                "FastAPI",
+                "HTML",
+                "Docker",
+                "Git",
+                "GitHub",
+            ]}
+        />
+        <ProjectCard
+            imageSrc={imagenEjemplo}
+            title="Mi proyecto"
+            description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
+            technologies={["Astro", "TypeScript", "CSS"]}
+        />
+        <ProjectCard
+            imageSrc={imagenEjemplo}
+            title="Proyecto 22"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            technologies={[
+                "Python",
+                "Django",
+                "FastAPI",
+                "HTML",
+                "Docker",
+                "Git",
+                "GitHub",
+            ]}
+        />
     </div>
 
-    <div id="estudios"></div>
+    <SectionLink hrefLink="#" text="Ver todos mis proyectos" />
+
+    <div id="estudios">
+        <EducationCard
+            period="2024 ━ 2026"
+            title="Grado Superior en Desarrollo de Aplicaciones Multiplataforma"
+            description="Santa María la Nueva y San José Artesano"
+        />
+
+        <EducationCard
+            period="2022-2023"
+            title="Fundamentos de la gestión de proyectos"
+            description="Google Fundae Scholarships"
+        />
+        <EducationCard
+            period="2022-2023"
+            title="Data Analysis"
+            description="Google Fundae Scholarships"
+        />
+        <EducationCard
+            period="2022-2023"
+            title="IT Automation with Python"
+            description="Google Fundae Scholarships"
+        />
+        <EducationCard
+            period="2022-2023"
+            title="IT Support"
+            description="Google Fundae Scholarships"
+        />
+        <EducationCard
+            period="2022-2023"
+            title="UX Design"
+            description="Google Fundae Scholarships"
+        />
+        <EducationCard
+            period="2016 ━ 2017"
+            title="Grado Medio en Sistemas Microinformáticos y Redes"
+            description="Juan de Colonia"
+        />
+    </div>
 </MainLayout>

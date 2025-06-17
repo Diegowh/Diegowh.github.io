@@ -47,6 +47,10 @@ p {
     line-height: 1.7em;
 }
 
+b {
+    color: #e5e7eb;
+}
+
 .profile__name {
     color: #e5e7eb;
     margin-left: -2px;
@@ -161,19 +165,19 @@ p {
     line-height: 2.2em;
 }
 
-/* CV Link */
+/* Section Link */
 
-.cv_link_container {
+.section_link_container {
     padding-top: 10px;
     padding-bottom: 120px;
 }
 
-.cv_link_txt {
+.section_link_txt {
     color: whitesmoke;
     font-weight: 700;
 }
 
-.cv_link_txt:hover {
+.section_link_txt:hover {
     color: rgba(94, 234, 212);
 }
 
@@ -232,4 +236,10 @@ p {
 
 #sobre-mi {
     scroll-margin-top: 100px;
+}
+
+.education_card {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.3em;
 }

@@ -1,0 +1,14 @@
+---
+export interface Props {
+    hrefLink: string,
+    text: string
+}
+
+const { hrefLink, text } = Astro.props
+---
+
+<div class="section_link_container">
+    <a href={hrefLink}>
+        <span class="section_link_txt">{text}</span>
+    </a>
+</div>
