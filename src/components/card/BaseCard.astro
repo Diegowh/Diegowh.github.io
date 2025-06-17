@@ -11,7 +11,7 @@ const { title, description, technologies = [], class: customClass = '' } = Astro
 
 <div class={`card ${customClass}`}>
   <div class="card__left_column">
-    <slot name="left" />
+    <slot name="left" class="title"/>
   </div>
   <div class="card__right_column">
     <p class="title">{title}</p>
