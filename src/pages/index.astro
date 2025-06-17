@@ -8,10 +8,12 @@ import ProjectCard from "../components/card/ProjectCard.astro";
 import Menu from "../components/Menu.astro";
 import EducationCard from "../components/card/EducationCard.astro";
 import SocialMedia from "../components/SocialMedia.astro";
-import ProjectsLink from "../components/ProjectsLink.astro"
+import ProjectsLink from "../components/ProjectsLink.astro";
 
 import imagenEjemplo from "../assets/course-card.webp";
-
+import KonohaProjectImage from "../assets/konoha_project.png";
+import WhMultitoolImage from "../assets/wh-multitool.png";
+import WhBotImage from "../assets/wallhack-bot.png";
 ---
 
 <MainLayout>
@@ -58,89 +60,59 @@ import imagenEjemplo from "../assets/course-card.webp";
         />
     </div>
 
-    <SectionLink hrefLink="#" text="Ver CV completo"/>
+    <SectionLink hrefLink="#" text="Ver CV completo" />
 
     <div id="proyectos">
-        <ProjectCard
-            imageSrc={imagenEjemplo}
-            title="Mi proyecto"
-            description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
-            technologies={["Astro", "TypeScript", "CSS"]}
-        />
-        <ProjectCard
-            imageSrc={imagenEjemplo}
-            title="Proyecto 22"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            technologies={[
-                "Python",
-                "Django",
-                "FastAPI",
-                "HTML",
-                "Docker",
-                "Git",
-                "GitHub",
-            ]}
-        />
-        <ProjectCard
-            imageSrc={imagenEjemplo}
-            title="Mi proyecto"
-            description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
-            technologies={["Astro", "TypeScript", "CSS"]}
-        />
-        <ProjectCard
-            imageSrc={imagenEjemplo}
-            title="Proyecto 22"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            technologies={[
-                "Python",
-                "Django",
-                "FastAPI",
-                "HTML",
-                "Docker",
-                "Git",
-                "GitHub",
-            ]}
-        />
-        <ProjectCard
-            imageSrc={imagenEjemplo}
-            title="Mi proyecto"
-            description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
-            technologies={["Astro", "TypeScript", "CSS"]}
-        />
-        <ProjectCard
-            imageSrc={imagenEjemplo}
-            title="Proyecto 22"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            technologies={[
-                "Python",
-                "Django",
-                "FastAPI",
-                "HTML",
-                "Docker",
-                "Git",
-                "GitHub",
-            ]}
-        />
-        <ProjectCard
-            imageSrc={imagenEjemplo}
-            title="Mi proyecto"
-            description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
-            technologies={["Astro", "TypeScript", "CSS"]}
-        />
-        <ProjectCard
-            imageSrc={imagenEjemplo}
-            title="Proyecto 22"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            technologies={[
-                "Python",
-                "Django",
-                "FastAPI",
-                "HTML",
-                "Docker",
-                "Git",
-                "GitHub",
-            ]}
-        />
+        <a href="https://github.com/Diegowh/KonohaProject" target="_blank"
+            ><ProjectCard
+                imageSrc={KonohaProjectImage}
+                title="KonohaProject"
+                description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
+                technologies={["Astro", "TypeScript", "CSS"]}
+            />
+        </a>
+        <a href="https://github.com/Diegowh/WHMultitool" target="_blank">
+            <ProjectCard
+                imageSrc={WhMultitoolImage}
+                title="WH Multitool"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                technologies={[
+                    "Python",
+                    "Django",
+                    "FastAPI",
+                    "HTML",
+                    "Docker",
+                    "Git",
+                    "GitHub",
+                ]}
+            />
+        </a>
+
+        <a href="https://github.com/Diegowh/wallhack-bot" target="_blank">
+            <ProjectCard
+                imageSrc={WhBotImage}
+                title="Wallhack Bot"
+                description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
+                technologies={["Astro", "TypeScript", "CSS"]}
+            />
+        </a>
+
+        <a href="https://github.com/Diegowh/WHGG" target="_blank">
+            <ProjectCard
+                imageSrc={imagenEjemplo}
+                title="WH.GG"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                technologies={[
+                    "Python",
+                    "Django",
+                    "FastAPI",
+                    "HTML",
+                    "Docker",
+                    "Git",
+                    "GitHub",
+                ]}
+            />
+        </a>
     </div>
 
     <ProjectsLink hrefLink="#" text="Ver todos mis proyectos" />

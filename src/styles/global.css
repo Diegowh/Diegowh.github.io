@@ -125,7 +125,7 @@ b {
 }
 
 .social_media :hover .icon {
-fill: rgba(94, 234, 212);
+    fill: rgba(94, 234, 212);
 }
 
 /* Tarjeta de Experiencia Laboral */
@@ -159,6 +159,7 @@ fill: rgba(94, 234, 212);
     margin-right: 3.5em;
 
 }
+
 .card__left_column .period {
     color: rgb(100, 116, 139);
 
@@ -207,8 +208,8 @@ fill: rgba(94, 234, 212);
 
 .section_link_container a:hover .section_link_txt,
 .section_link_container a:hover .icon {
-  color: rgba(94, 234, 212);
-  fill:  rgba(94, 234, 212);
+    color: rgba(94, 234, 212);
+    fill: rgba(94, 234, 212);
 }
 
 .section_link_container a:hover .icon {
@@ -234,6 +235,7 @@ fill: rgba(94, 234, 212);
     fill: whitesmoke;
     margin-left: .5em;
 }
+
 .projects_link_container {
     padding-top: 10px;
     padding-bottom: 120px;
@@ -246,8 +248,8 @@ fill: rgba(94, 234, 212);
 
 .projects_link_container a:hover .projects_link_txt,
 .projects_link_container a:hover .icon {
-  color: rgba(94, 234, 212);
-  fill:  rgba(94, 234, 212);
+    color: rgba(94, 234, 212);
+    fill: rgba(94, 234, 212);
 }
 
 .projects_link_container a:hover .icon {
@@ -266,6 +268,10 @@ fill: rgba(94, 234, 212);
     border-radius: 2px;
 }
 
+.project_card .icon {
+    transform: translate(0px, 2px);
+    transition: transform .2s ease, fill .2s ease;
+}
 
 /* Menu */
 .menu ul {
@@ -318,6 +324,3 @@ fill: rgba(94, 234, 212);
     padding-bottom: 0.5em;
     margin-bottom: 0.3em;
 }
-
-
-
