@@ -14,7 +14,7 @@ const { period, title, description, technologies = [] } = Astro.props;
     <span class="period">{period}</span>
   </div>
   <div class="card__right_column">
-    <p class="title">{title}</p>
+    <p class="title">{title} </p><span class="period_mobile">{period}</span>
     <p class="description">{description}</p>
     <div class="tech_container">
       {technologies.map(tech => <span>{tech}</span>)}
