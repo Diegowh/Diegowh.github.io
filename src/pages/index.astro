@@ -10,10 +10,10 @@ import EducationCard from "../components/card/EducationCard.astro";
 import SocialMedia from "../components/SocialMedia.astro";
 import ProjectsLink from "../components/ProjectsLink.astro";
 
-import imagenEjemplo from "../assets/course-card.webp";
 import KonohaProjectImage from "../assets/konoha_project.png";
 import WhMultitoolImage from "../assets/wh-multitool.png";
 import WhBotImage from "../assets/wallhack-bot.png";
+import WhggImage from "../assets/whgg.png"
 ---
 
 <MainLayout>
@@ -28,7 +28,7 @@ import WhBotImage from "../assets/wallhack-bot.png";
         <ExperienceCard
             period="2025 ━ ACTUALIDAD"
             title="Desarrollador de Software · Homolocar"
-            description="He desarrollado y mantenido una herramienta de automatización de procesos internos de la empresa. Gracias a esto he conseguido reducir la carga de trabajo de la plantilla significativamente."
+            description="Desarrollo y mantengo una herramienta de automatización de procesos internos de la empresa. Gracias a esto he conseguido reducir la carga de trabajo de la plantilla significativamente."
             technologies={[
                 "Python",
                 "PostgreSQL",
@@ -66,24 +66,22 @@ import WhBotImage from "../assets/wallhack-bot.png";
         <a href="https://github.com/Diegowh/KonohaProject" target="_blank"
             ><ProjectCard
                 imageSrc={KonohaProjectImage}
-                title="KonohaProject"
-                description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
-                technologies={["Astro", "TypeScript", "CSS"]}
+                title="TimeJutsu"
+                description="Aplicación móvil inspirada en la serie de animación Naruto, diseñada para mejorar tu productividad mediante la gamificación. Puedes desbloquear personajes, ganar experiencia y coleccionar logros."
+                technologies={["Kotlin", "Android Studio", "XML", "Jetpack Compose", "Gradle", "Git y Github"
+                ]}
             />
         </a>
         <a href="https://github.com/Diegowh/WHMultitool" target="_blank">
             <ProjectCard
                 imageSrc={WhMultitoolImage}
                 title="WH Multitool"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                description="Herramienta de control automatizado para ARK: Survival Ascended. Te permite realizar una amplia lista de tareas y acciones dentro del videojuego de manera automática."
                 technologies={[
                     "Python",
-                    "Django",
-                    "FastAPI",
-                    "HTML",
-                    "Docker",
-                    "Git",
-                    "GitHub",
+                    "pyautogui",
+                    "Poetry",
+                    "Git y Github"
                 ]}
             />
         </a>
@@ -92,24 +90,27 @@ import WhBotImage from "../assets/wallhack-bot.png";
             <ProjectCard
                 imageSrc={WhBotImage}
                 title="Wallhack Bot"
-                description="Descripcion super breve de un proyecto desarrollado para hacer una cosa y otra y aquella. Aprendi a utilizar esta tecnologia y la otra."
-                technologies={["Astro", "TypeScript", "CSS"]}
+                description="Bot de Discord para ofrecer un servicio a los jugadores de ARK: Survival Ascended. Permite monitorizar en tiempo real el estado de los servidores oficiales del juego, así como gestionar tickets, crear temporizadores, y otras funciones de gestión y administración."
+                technologies={["Python", "Discord.py", "aiohttp", "SQLite"]}
             />
         </a>
 
         <a href="https://github.com/Diegowh/WHGG" target="_blank">
             <ProjectCard
-                imageSrc={imagenEjemplo}
+                imageSrc={WhggImage}
                 title="WH.GG"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                description="Aplicación web de análisis de datos para League of Legends. Permite consultar y comparar estadísticas de perfiles de jugador, visualizar diferentes Tier List y otros datos relevantes."
                 technologies={[
-                    "Python",
-                    "Django",
                     "FastAPI",
-                    "HTML",
+                    "Python",
+                    "React",
+                    "TypeScript",
                     "Docker",
-                    "Git",
-                    "GitHub",
+                    "PostgreSQL",
+                    "SQLAlchemy",
+                    "Poetry",
+                    "Vite",
+                    "Git y GitHub"
                 ]}
             />
         </a>

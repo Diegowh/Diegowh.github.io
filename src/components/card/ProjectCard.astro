@@ -1,6 +1,6 @@
 ---
-import BaseCard from "./BaseCard.astro";
 import { Image } from "astro:assets";
+import DiagonalArrowIcon from "../reshot-icon-arrow-diagonal-up-right.svg";
 
 export interface Props {
     imageSrc: ImageMetadata;
@@ -9,11 +9,22 @@ export interface Props {
     technologies?: string[];
 }
 
-const { imageSrc, ...rest } = Astro.props;
+const { imageSrc, title, description, technologies = [] } = Astro.props;
 ---
 
-<BaseCard {...rest}>
-    <div slot="left">
-        <Image class="project_image" src={imageSrc} alt={rest.title} />
+<div class="card">
+    <div class="card__left_column">
+        <div class="img_container">
+            <Image class="project_image" src={imageSrc} alt={title} />
+        </div>
     </div>
-</BaseCard>
+    <div class="card__right_column">
+        <span class="title">{title}</span>
+        <DiagonalArrowIcon class="icon"/>
+        
+        <p class="description">{description}</p>
+        <div class="tech_container">
+            {technologies.map((tech) => <span>{tech}</span>)}
+        </div>
+    </div>
+</div>

@@ -1,5 +1,4 @@
 ---
-import BaseCard from "./BaseCard.astro";
 
 export interface Props {
     period: string;
@@ -8,9 +7,17 @@ export interface Props {
     technologies?: string[];
 }
 
-const { period, ...rest } = Astro.props;
+const { period, title, description, technologies = [] } = Astro.props;
 ---
-
-<BaseCard {...rest}>
-    <div slot="left" class="period">{period}</div>
-</BaseCard>
+<div class="card">
+  <div class="card__left_column">
+    <span class="period">{period}</span>
+  </div>
+  <div class="card__right_column">
+    <p class="title">{title}</p>
+    <p class="description">{description}</p>
+    <div class="tech_container">
+      {technologies.map(tech => <span>{tech}</span>)}
+    </div>
+  </div>
+</div>
