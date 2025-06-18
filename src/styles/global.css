@@ -462,6 +462,9 @@ b {
         transition: opacity 0.3s;
     }
 
+    .social_media :hover .icon {
+        fill: rgb(148, 163, 184);
+    }
 
     .card:hover {
         background-color: transparent;
