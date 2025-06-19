@@ -6,6 +6,18 @@
 /* ========================================
    RESET & BASE STYLES
    ======================================== */
+
+:root {
+    --color-principal: rgb(231, 255, 134);
+    --color-texto: rgb(148, 163, 184);
+    --color-texto-enfasis: whitesmoke;
+    --color-background: #0f172a;
+    --color-background-tech-container: rgba(55, 59, 18, 0.669);
+
+    --color-principal-deprecated: rgba(94, 234, 212);
+    --color-background-tech-container-deprecated: rgba(18, 49, 59, 0.669);
+}
+
 *,
 *::before,
 *::after {
@@ -13,7 +25,7 @@
 }
 
 * {
-    color: rgb(148, 163, 184);
+    color: var(--color-texto);
 }
 
 html,
@@ -23,7 +35,7 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: #0f172a;
+    background-color: var(--color-background);
     scroll-behavior: smooth;
 }
 
@@ -57,7 +69,7 @@ a {
 }
 
 b {
-    color: #e5e7eb;
+    color: var(--color-texto-enfasis);
 }
 
 /* ========================================
@@ -109,19 +121,19 @@ b {
    PROFILE SECTION
    ======================================== */
 .profile__name {
-    color: rgba(94, 234, 212);
+    color: var(--color-principal);
     margin-left: -2px;
     letter-spacing: -3px;
 }
 
 .profile__surname {
-    color: #e5e7eb;
+    color: var(--color-texto-enfasis);
 }
 
 .profile__title {
     margin-bottom: 1.3em;
     margin-top: .4em;
-    color: #e5e7eb;
+    color: var(--color-texto-enfasis);
 }
 
 .profile_description {
@@ -145,7 +157,7 @@ b {
 
 .menu__name {
     font-weight: bold;
-    color: rgba(148, 163, 184);
+    color: var(--color-texto);
     font-size: smaller;
     vertical-align: middle;
     transition: color .3s ease;
@@ -153,7 +165,7 @@ b {
 
 .menu a:hover .menu__name,
 .menu a.active .menu__name {
-    color: rgba(94, 234, 212);
+    color: var(--color-principal);
 }
 
 .menu__bar {
@@ -162,14 +174,14 @@ b {
     height: 1px;
     width: 40px;
     margin-right: 10px;
-    background-color: rgba(148, 163, 184);
+    background-color: var(--color-texto);
     transition: width .3s ease, background-color .3s ease;
 }
 
 .menu a:hover .menu__bar,
 .menu a.active .menu__bar {
     width: 70px;
-    background-color: rgba(94, 234, 212);
+    background-color: var(--color-principal);
 }
 
 .menu a:focus-visible .menu__bar {
@@ -191,11 +203,11 @@ b {
 .social_media .icon {
     width: 1.7em;
     height: auto;
-    fill: rgba(148, 163, 184);
+    fill: var(--color-texto);
 }
 
 .social_media :hover .icon {
-    fill: rgba(94, 234, 212);
+    fill: var(--color-principal);
 }
 
 
@@ -224,7 +236,7 @@ b {
 .card .icon {
     width: 1em;
     height: auto;
-    fill: whitesmoke;
+    fill: var(--color-texto-enfasis);
     margin-left: 0.5em;
     transform: translate(0px, 2px);
     transition: transform .2s ease, fill .2s ease;
@@ -238,13 +250,13 @@ b {
 
 .card:hover .icon {
     transform: translate(2px, -2px);
-    fill: rgba(94, 234, 212);
+    fill: var(--color-principal);
 }
 
 .card:hover .title,
 .card:hover .icon {
-    color: rgba(94, 234, 212);
-    fill: rgba(94, 234, 212);
+    color: var(--color-principal);
+    fill: var(--color-principal);
 }
 
 .card__left_column {
@@ -256,12 +268,12 @@ b {
 }
 
 .card__left_column .period {
-    color: rgb(100, 116, 139);
+    color: var(--color-texto);
 }
 
 .card__right_column .title {
     font-weight: bold;
-    color: whitesmoke;
+    color: var(--color-texto-enfasis);
     margin-bottom: 0.5em;
 }
 
@@ -278,8 +290,9 @@ b {
 }
 
 .card__right_column .tech_container span {
-    color: rgba(94, 234, 212);
-    background-color: rgba(18, 49, 59, 0.669);
+    color: var(--color-principal);
+    background-color: var(--color-background-tech-container);
+
     padding: 0px 1em;
     border-radius: 20px;
     font-size: .8em;
@@ -342,14 +355,14 @@ b {
 }
 
 .section_link_txt {
-    color: whitesmoke;
+    color: var(--color-texto-enfasis);
     font-weight: 700;
 }
 
 .section_link_container .icon {
     width: 1em;
     height: auto;
-    fill: whitesmoke;
+    fill: var(--color-texto-enfasis);
     margin-left: .5em;
     transform: translate(-2px, 2px);
     transition: transform .2s ease, fill .2s ease;
@@ -357,8 +370,8 @@ b {
 
 .section_link_container a:hover .section_link_txt,
 .section_link_container a:hover .icon {
-    color: rgba(94, 234, 212);
-    fill: rgba(94, 234, 212);
+    color: var(--color-principal);
+    fill: var(--color-principal);
 }
 
 .section_link_container a:hover .icon {
@@ -374,14 +387,14 @@ b {
 }
 
 .projects_link_txt {
-    color: whitesmoke;
+    color: var(--color-texto-enfasis);
     font-weight: 700;
 }
 
 .projects_link_container .icon {
     width: 1em;
     height: auto;
-    fill: whitesmoke;
+    fill: var(--color-texto-enfasis);
     margin-left: .5em;
     transform: translate(0px, 2px);
     transition: transform .2s ease, fill .2s ease;
@@ -389,8 +402,8 @@ b {
 
 .projects_link_container a:hover .projects_link_txt,
 .projects_link_container a:hover .icon {
-    color: rgba(94, 234, 212);
-    fill: rgba(94, 234, 212);
+    color: var(--color-principal);
+    fill: var(--color-principal);
 }
 
 .projects_link_container a:hover .icon {
@@ -421,7 +434,7 @@ b {
     .title__proyectos,
     .title__educacion {
         display: block;
-        color: whitesmoke;
+        color: var(--color-texto-enfasis);
         margin-bottom: 2em;
     }
 
@@ -463,7 +476,7 @@ b {
     }
 
     .social_media :hover .icon {
-        fill: rgb(148, 163, 184);
+        fill: var(--color-texto);
     }
 
     .card:hover {
@@ -474,13 +487,13 @@ b {
 
     .card:hover .icon {
         transform: none;
-        fill: whitesmoke;
+        fill: var(--color-texto-enfasis);
     }
 
     .card:hover .title,
     .card:hover .icon {
-        color: whitesmoke;
-        fill: whitesmoke;
+        color: var(--color-texto-enfasis);
+        fill: var(--color-texto-enfasis);
     }
 
     @media (max-width: 800px) {
