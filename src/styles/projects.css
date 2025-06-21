@@ -151,7 +151,8 @@ table a {
     color: var(--color-texto-enfasis);
 }
 
-.mobile_link, .mobile_text {
+.mobile_link,
+.mobile_text {
     display: none;
 }
 
@@ -165,7 +166,8 @@ table a {
         display: none;
     }
 
-    .mobile_link, .mobile_text {
+    .mobile_link,
+    .mobile_text {
         display: inline;
         color: var(--color-texto-enfasis);
     }
@@ -186,6 +188,10 @@ table a {
     }
 
     .year {
-        width:40px;
+        width: 40px;
+    }
+
+    .projects_title {
+        margin-top: .5em;
     }
 }
