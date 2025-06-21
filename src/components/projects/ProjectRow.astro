@@ -6,20 +6,20 @@ interface Props {
     url?: string;
 }
 
-const { year, projectName, technologies, url} = Astro.props;
+const { year, projectName, technologies, url } = Astro.props;
 import DiagonalArrowIcon from "../reshot-icon-arrow-diagonal-up-right.svg";
 ---
 
 <tr class="project_row">
   <td class="year">{year}</td>
   <td class="project_name">
-
-    <span class="desktop-name">{projectName}</span>
-
-    {url && (
-      <a href={url} class="mobile-link">
+    <span class="desktop_name">{projectName}</span>
+    {url ? (
+      <a href={url} class="mobile_link">
         {projectName} <DiagonalArrowIcon class="icon" />
       </a>
+    ) : (
+      <span class="mobile_text">{projectName}</span>
     )}
   </td>
   <td class="technologies">

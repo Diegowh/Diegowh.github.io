@@ -147,11 +147,11 @@ table a {
     }
 }
 
-.desktop-name {
-    display: inline;
+.desktop_name {
+    color: var(--color-texto-enfasis);
 }
 
-.mobile-link {
+.mobile_link, .mobile_text {
     display: none;
 }
 
@@ -161,16 +161,16 @@ table a {
 
 
 @media (max-width: 525px) {
-    .desktop-name {
+    .desktop_name {
         display: none;
     }
 
-    .mobile-link {
+    .mobile_link, .mobile_text {
         display: inline;
         color: var(--color-texto-enfasis);
     }
 
-    .mobile-link:hover {
+    .mobile_link:hover {
         color: var(--color-principal);
         fill: var(--color-principal);
     }
@@ -179,7 +179,7 @@ table a {
         display: none;
     }
 
-    .mobile-link .icon {
+    .mobile_link .icon {
         fill: var(--color-texto);
         height: 17px;
 
