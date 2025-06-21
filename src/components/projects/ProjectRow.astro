@@ -1,0 +1,38 @@
+---
+interface Props {
+    year: string;
+    projectName: string;
+    technologies: string[];
+    url?: string;
+}
+
+const { year, projectName, technologies, url} = Astro.props;
+import DiagonalArrowIcon from "../reshot-icon-arrow-diagonal-up-right.svg";
+---
+
+<tr class="project_row">
+  <td class="year">{year}</td>
+  <td class="project_name">
+
+    <span class="desktop-name">{projectName}</span>
+
+    {url && (
+      <a href={url} class="mobile-link">
+        {projectName} <DiagonalArrowIcon class="icon" />
+      </a>
+    )}
+  </td>
+  <td class="technologies">
+    {technologies.map(tech => (
+      <span>{tech}</span>
+    ))}
+  </td>
+  <td class="link">
+    {url ? (
+      <a href={url}>
+        <span>{url.replace("https://github.com/",  "github.com/")}</span>
+        <DiagonalArrowIcon class="icon" />
+      </a>
+    ) : null}
+  </td>
+</tr>

@@ -1,0 +1,77 @@
+---
+import ProjectRow from "./ProjectRow.astro";
+
+const projects = [
+    {
+        year: "2025",
+        projectName: "TimeJutsu",
+        technologies: ["Kotlin", "AndroidStudio", "Git y Github"],
+        url: "https://github.com/Diegowh/KonohaProject",
+    },
+    {
+        year: "2024",
+        projectName: "WH.GG",
+        technologies: ["FastAPI", "React", "Python", "TypeScript", "Docker", "PostgreSQL", "SQLAlchemy", "Git y GitHub"],
+        url: "https://github.com/Diegowh/WHGG",
+    },
+    {
+        year: "2024",
+        projectName: "Wallhack Bot",
+        technologies: ["Python", "Discord.py", "aiohttp", "SQLite"],
+        url: "https://github.com/Diegowh/wallhack-bot",
+    },
+    {
+        year: "2024",
+        projectName: "WH Multitool",
+        technologies: ["Python", "pyautogui", "Poetry", "Git y Github"],
+        url: "https://github.com/Diegowh/WHMultitool",
+    },
+    {
+        year: "2023",
+        projectName: "PDF Splitter",
+        technologies: ["Python", "tkinter"],
+        url: "https://github.com/Diegowh/PDF-Splitter",
+    },
+    {
+        year: "2023",
+        projectName: "Valorant Path Tracker",
+        technologies: ["SwiftUI","Swift", "XCode"]
+    },
+    {
+        year: "2023",
+        projectName: "WH.GG v2",
+        technologies: ["Django", "Python", "HTML", "CSS", "JavaScript", "PostgreSQL"]
+    },
+    {
+        year: "2023",
+        projectName: "WH.GG v1",
+        technologies: ["Flask", "Python", "PostgreSQL"]
+    },
+    {
+        year: "2023",
+        projectName: "Alistair Bot",
+        technologies: ["Python", "discord.py"],
+        url: "https://github.com/Diegowh/alistair-bot",
+    },
+    {
+        year: "2023",
+        projectName: "Text to Morse Translator",
+        technologies: ["Python", "SQLite"],
+        url: "https://github.com/Diegowh/text-to-morse-translator",
+    },
+];
+---
+
+<table>
+    <thead>
+        <tr>
+            <th class="year">Año</th>
+            <th class="project_name">Proyecto</th>
+            <th class="technologies">Tecnologías</th>
+            <th class="link">Enlace</th>
+        </tr>
+    </thead>
+    <tbody>
+        {projects.map((project) => <ProjectRow {...project} />)}
+    </tbody>
+</table>

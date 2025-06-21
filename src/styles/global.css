@@ -476,7 +476,7 @@ b {
     }
 
     .social_media :hover .icon {
-        fill: var(--color-texto);
+        fill: var(--color-principal);
     }
 
     .card:hover {
