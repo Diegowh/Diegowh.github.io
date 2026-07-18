@@ -29,7 +29,7 @@ import WhggImage from "../assets/whgg.png"
         <h4 class="title__experiencia">EXPERIENCIA</h4>
         <ExperienceCard
             period="Febrero 2026 ━ ACTUALIDAD"
-            title="Desarrollador de Software · Softeca Internet S.L."
+            title="Desarrollador de Software · Softeca S.L."
             description="Trabajo para clientes internacionales. Diseño arquitecturas de software y de agentes de IA, mejoro los flujos de trabajo del equipo y promuevo buenas prácticas de código. También desarrollo herramientas internas para automatizar y acelerar los procesos de desarrollo."
             technologies={[
                 "Spring Boot",
@@ -37,8 +37,9 @@ import WhggImage from "../assets/whgg.png"
                 "Docker",
                 "Spring Security",
                 "JWT",
-                "Samba",
+                "PHP",
                 "Git",
+                "Claude Code",
             ]}
         />
 
@@ -81,6 +82,27 @@ import WhggImage from "../assets/whgg.png"
 
     <div id="proyectos">
         <h4 class="title__proyectos">PROYECTOS</h4>
+        <a href="https://ndgg.diegowh.dev" target="_blank">
+            <ProjectCard
+                imageSrc={WhggImage}
+                title="WH.GG"
+                description="Aplicación web de estadísticas de League of Legends desplegada en producción."
+                technologies={[
+                    "Java",
+                    "Spring Boot",
+                    "Hexagonal Architecture",
+                    "DDD",
+                    "PostgreSQL",
+                    "Flyway",
+                    "React",
+                    "TypeScript",
+                    "Vite",
+                    "Tailwind",
+                    "CI/CD",
+                ]}
+            />
+        </a>
+
         <a href="https://github.com/Diegowh/KonohaProject" target="_blank"
             ><ProjectCard
                 imageSrc={KonohaProjectImage}
@@ -113,25 +135,6 @@ import WhggImage from "../assets/whgg.png"
             />
         </a>
 
-        <a href="https://github.com/Diegowh/WHGG" target="_blank">
-            <ProjectCard
-                imageSrc={WhggImage}
-                title="WH.GG"
-                description="Aplicación web de análisis de datos para League of Legends. Permite consultar y comparar estadísticas de perfiles de jugador, visualizar diferentes Tier List y otros datos relevantes."
-                technologies={[
-                    "FastAPI",
-                    "Python",
-                    "React",
-                    "TypeScript",
-                    "Docker",
-                    "PostgreSQL",
-                    "SQLAlchemy",
-                    "Poetry",
-                    "Vite",
-                    "Git y GitHub"
-                ]}
-            />
-        </a>
     </div>
 
     <ProjectsLink hrefLink="/projects" text="Ver todos mis proyectos" />
